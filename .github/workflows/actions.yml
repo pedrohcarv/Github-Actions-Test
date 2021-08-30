@@ -1,0 +1,14 @@
+name: shell commands
+
+on: [push]
+
+jobs:
+    runshell:
+        runs-on: debian-latest
+        steps:
+        - name: print string
+          run: echo "Integracao continua vai dominar o mundo"
+        - name: faz uma parada
+          run: |
+          node -v
+          npm -v
